@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://docs.google.com https://*.googleusercontent.com https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>학교 실험 여건 설정 (교사용)</title>
+  <link rel="stylesheet" href="./assets/teacher.css">
+  <script type="module" src="./assets/teacher.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="t-header">
+    <div class="t-wrap">
+      <p class="t-eyebrow">교사용</p>
+      <h1>학교 실험 여건 설정</h1>
+      <p class="t-lead">학교 기자재, 추가 예산, 탐구 시간을 적어 <code>school-config.json</code> 파일로 내려받습니다. 학생 화면은 이 파일을 읽어 탐구 주제와 설계를 점검할 때 참고합니다.</p>
+    </div>
+  </header>
+
+  <main id="main" class="t-wrap" tabindex="-1">
+    <div class="t-notice">
+      <p><strong>이 화면은 배포된 설정을 바꾸지 않습니다.</strong> 여기서 고친 내용은 이 탭에만 있고, [GitHub에 저장]을 하거나 공개용 파일을 저장소에 올려야 학생에게 반영됩니다. 탭을 닫으면 편집 내용이 사라지니 교사용 전체 백업도 내려받아 두세요.</p>
+      <button type="button" class="btn btn-secondary" id="load-deployed">현재 배포된 설정 불러오기</button>
+    </div>
+
+    <div id="status" class="t-status" role="status" aria-live="polite"></div>
+    <noscript><p class="t-error-box">이 화면은 JavaScript가 필요합니다.</p></noscript>
+
+    <section class="t-section" aria-labelledby="sec-equipment">
+      <h2 id="sec-equipment"><span class="t-num" aria-hidden="true">①</span> 기자재 목록</h2>
+      <p class="t-help">기본 기자재(NEIS)와 추가 기자재(구글 스프레드시트·CSV·XLSX·직접 입력)를 따로 관리해요. 학생 화면에는 두 목록을 합친 통합 목록이 쓰이고, 수량이 0인 기자재는 학생에게 보이지 않아요. 보관 위치는 교사용 정보로만 저장돼요. 모두 합쳐 최대 500행입니다.</p>
+
+      <div class="t-acc" id="eq-acc">
+        <div class="t-acc-item" data-section="neis">
+          <h3 class="t-acc-h"><button type="button" class="t-acc-head" id="acc-neis-h" aria-expanded="false" aria-controls="acc-neis">기본 기자재 (NEIS) <span class="t-acc-count" id="count-neis"></span></button></h3>
+          <div class="t-acc-body" id="acc-neis" role="region" aria-labelledby="acc-neis-h" hidden>
+            <p class="t-help">NEIS에서 내려받은 "교과별 교구 보유현황" CSV를 고치지 않고 그대로 올리세요. 보유량이 수량으로 들어가요.</p>
+          </div>
+        </div>
+        <div class="t-acc-item" data-section="extra">
+          <h3 class="t-acc-h"><button type="button" class="t-acc-head" id="acc-extra-h" aria-expanded="false" aria-controls="acc-extra">추가 기자재 <span class="t-acc-count" id="count-extra"></span></button></h3>
+          <div class="t-acc-body" id="acc-extra" role="region" aria-labelledby="acc-extra-h" hidden>
+            <div class="t-url">
+              <div class="t-field">
+                <label for="sheet-url">구글 스프레드시트 URL</label>
+                <input type="url" id="sheet-url" autocomplete="off" inputmode="url" spellcheck="false">
+              </div>
+              <button type="button" class="btn btn-secondary" id="sheet-import">가져오기</button>
+            </div>
+            <p class="t-help">로그인하지 않아도 볼 수 있게 공유된 시트만 주소로 읽을 수 있어요. 한 번만 읽어 오는 것이며(자동 동기화 아님), 시트는 바꾸지 않아요. 비공개 시트는 시트에서 CSV나 XLSX로 내려받아 [파일 가져오기]로 올리세요.</p>
+          </div>
+        </div>
+        <div class="t-acc-item" data-section="all">
+          <h3 class="t-acc-h"><button type="button" class="t-acc-head" id="acc-all-h" aria-expanded="false" aria-controls="acc-all">통합 기자재 (학생 화면에 쓰임) <span class="t-acc-count" id="count-all"></span></button></h3>
+          <div class="t-acc-body" id="acc-all" role="region" aria-labelledby="acc-all-h" hidden>
+            <p class="t-help">기본 기자재와 추가 기자재를 합친 목록이에요. 고치려면 위의 해당 목록을 펼치세요. 수량이 0인 기자재는 학생에게 추천되지 않아요. 보관 위치와 검색 키워드는 학생에게 보이지 않아요.</p>
+            <div class="t-table-wrap"><table class="t-table t-combined" id="eq-combined">
+              <caption class="sr-only">통합 기자재 목록 (읽기 전용)</caption>
+              <thead><tr><th scope="col">이름</th><th scope="col">수량</th><th scope="col">규격</th><th scope="col">출처</th><th scope="col">학생 화면</th></tr></thead>
+              <tbody id="eq-combined-body"></tbody>
+            </table></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="eq-editor" hidden>
+        <div class="t-toolbar">
+          <div class="t-field t-search">
+            <label for="eq-search">기자재 검색</label>
+            <input type="search" id="eq-search" autocomplete="off" placeholder="이름, 규격, 비고, 분류, 위치, 키워드">
+          </div>
+          <div class="t-actions">
+            <button type="button" class="btn btn-secondary" id="add-row">행 추가</button>
+            <button type="button" class="btn btn-secondary" id="import-csv">파일 가져오기 (CSV·XLSX)</button>
+            <input type="file" id="file-csv" accept=".csv,text/csv,.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>
+          </div>
+        </div>
+        <p class="t-count" id="eq-count"></p>
+        <details class="t-details">
+          <summary>가져올 수 있는 파일 형식</summary>
+          <p>① NEIS "교과별 교구 보유현황" CSV → 기본 기자재 ② "기자재 이름, 수량"과 위치·검색 키워드 열이 있는 학교 기자재 목록(CSV·XLSX) → 추가 기자재 ③ 첫 줄이 <code>이름,수량,규격,비고,분류</code>인 CSV → 추가 기자재. 형식은 파일 내용으로 자동으로 알아봐요. 열 이름을 바꾸지 않아도 됩니다. CSV는 UTF-8·CP949 모두 읽고, 1MB·500행까지 가져올 수 있어요.</p>
+        </details>
+        <div class="t-table-wrap">
+          <table class="t-table" id="eq-table">
+            <caption class="sr-only">기자재 목록. 머리글의 버튼으로 정렬할 수 있습니다.</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="c-num"><span class="sr-only">행 번호</span></th>
+                <th scope="col" data-key="name"><button type="button" class="sort-btn" data-key="name">이름<span class="sort-ind" aria-hidden="true"></span></button></th>
+                <th scope="col" data-key="qty" class="c-qty"><button type="button" class="sort-btn" data-key="qty">수량<span class="sort-ind" aria-hidden="true"></span></button></th>
+                <th scope="col" data-key="spec"><button type="button" class="sort-btn" data-key="spec">규격<span class="sort-ind" aria-hidden="true"></span></button></th>
+                <th scope="col" data-key="note"><button type="button" class="sort-btn" data-key="note">비고<span class="sort-ind" aria-hidden="true"></span></button></th>
+                <th scope="col" data-key="category"><button type="button" class="sort-btn" data-key="category">분류<span class="sort-ind" aria-hidden="true"></span></button></th>
+                <th scope="col" data-key="location"><button type="button" class="sort-btn" data-key="location">보관 위치<span class="sort-ind" aria-hidden="true"></span></button></th>
+                <th scope="col" class="c-del"><span class="sr-only">삭제</span></th>
+              </tr>
+            </thead>
+            <tbody id="eq-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="t-actions t-json">
+        <button type="button" class="btn btn-secondary" id="import-json">설정 JSON 가져오기 (전체)</button>
+        <input type="file" id="file-json" accept=".json,application/json" hidden>
+      </div>
+    </section>
+
+    <section class="t-section" aria-labelledby="sec-budget">
+      <h2 id="sec-budget"><span class="t-num" aria-hidden="true">②</span> 추가 예산</h2>
+      <p class="t-help">보유하지 않은 기구나 소모품을 살 수 있는 금액입니다. 없으면 비워 두세요.</p>
+      <div class="t-grid">
+        <div class="t-field">
+          <label for="budget-amount">금액(원)</label>
+          <input type="text" id="budget-amount" inputmode="numeric" autocomplete="off" placeholder="예: 50000" data-field="budget.amount">
+        </div>
+        <div class="t-field t-span">
+          <label for="budget-note">예산 메모</label>
+          <textarea id="budget-note" rows="2" maxlength="500" data-field="budget.note"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="t-section" aria-labelledby="sec-time">
+      <h2 id="sec-time"><span class="t-num" aria-hidden="true">③</span> 탐구 시간</h2>
+      <p class="t-help">탐구에 쓸 수 있는 수업 시간입니다. 모르는 칸은 비워 두세요.</p>
+      <div class="t-grid">
+        <div class="t-field">
+          <label for="time-sessions">차시 수</label>
+          <input type="text" id="time-sessions" inputmode="numeric" autocomplete="off" data-field="time.sessions">
+        </div>
+        <div class="t-field">
+          <label for="time-minutes">차시당 분</label>
+          <input type="text" id="time-minutes" inputmode="numeric" autocomplete="off" data-field="time.minutesPerSession">
+        </div>
+        <div class="t-field">
+          <label for="time-weeks">기간(주)</label>
+          <input type="text" id="time-weeks" inputmode="numeric" autocomplete="off" data-field="time.weeks">
+        </div>
+        <div class="t-field t-span">
+          <label for="time-note">시간 메모</label>
+          <textarea id="time-note" rows="2" maxlength="500" data-field="time.note"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="t-section" aria-labelledby="sec-safety">
+      <h2 id="sec-safety"><span class="t-num" aria-hidden="true">④</span> 안전 유의 메모 <span class="t-optional">(선택)</span></h2>
+      <div class="t-field">
+        <label for="safety-note">학생에게 알릴 안전 유의 사항</label>
+        <textarea id="safety-note" rows="4" maxlength="2000" data-field="safetyNote"></textarea>
+      </div>
+    </section>
+
+    <section class="t-section" aria-labelledby="sec-vendors">
+      <h2 id="sec-vendors"><span class="t-num" aria-hidden="true">⑤</span> 안내할 구매처 <span class="t-optional">(선택)</span></h2>
+      <div class="t-field">
+        <label for="vendors">구매처 이름과 주소 (한 줄에 하나, 예시 형식: 이름 | https://주소)</label>
+        <p class="t-help">학생의 기자재 조사 프롬프트에 참고용으로 들어갑니다. 예산이나 보유 기자재는 학생 모둠이 각자 적으며, 이 화면은 가격이나 재고를 조회하지 않습니다.</p>
+        <textarea id="vendors" rows="4" maxlength="10000" data-field="vendorsText"></textarea>
+      </div>
+    </section>
+
+    <section class="t-section t-export" aria-labelledby="sec-export">
+      <h2 id="sec-export">내려받기와 저장소에 올리기</h2>
+      <div id="export-errors" class="t-error-box" role="alert" hidden>
+        <p id="export-errors-title"></p>
+        <ul id="export-errors-list"></ul>
+      </div>
+      <div class="t-actions">
+        <button type="button" class="btn btn-primary" id="gh-open">GitHub에 저장</button>
+        <button type="button" class="btn btn-secondary" id="download">공개용 school-config.json 내려받기</button>
+        <button type="button" class="btn btn-secondary" id="download-backup">교사용 전체 백업 내려받기</button>
+      </div>
+      <p class="t-help"><strong>GitHub에 저장</strong>과 <strong>공개용 파일</strong>에는 보관 위치와 검색 키워드가 들어가지 않아요. 비고, 예산, 시간, 안전 메모는 누구나 볼 수 있게 공개되니 공개하면 안 되는 내용은 적지 마세요.</p>
+      <p class="t-help"><strong>교사용 전체 백업</strong>에는 보관 위치와 검색 키워드까지 모두 들어 있어요. 저장소에 올리지 말고 선생님만 보관하세요. 다음에 [설정 JSON 가져오기 (전체)]로 다시 불러올 수 있어요.</p>
+      <p class="t-help" id="gh-last" hidden></p>
+      <details class="t-details">
+        <summary>파일을 직접 올리는 방법</summary>
+      <ol class="t-steps">
+        <li>[공개용 school-config.json 내려받기]로 파일을 내려받습니다. 파일 이름은 바꾸지 마세요. 교사용 전체 백업은 올리면 안 됩니다.</li>
+        <li>이 사이트의 GitHub 저장소에서 <code>config</code> 폴더를 엽니다.</li>
+        <li><strong>Add file → Upload files</strong>를 누르고 내려받은 파일을 끌어다 놓습니다. 같은 이름의 파일이 있으면 새 파일로 바뀝니다.</li>
+        <li>아래쪽 <strong>Commit changes</strong>를 누릅니다.</li>
+        <li>몇 분 뒤 학생 화면을 새로고침하면 새 설정이 반영됩니다. 이 화면의 [현재 배포된 설정 불러오기]로 반영 여부를 확인할 수 있습니다.</li>
+      </ol>
+      </details>
+    </section>
+  </main>
+
+  <dialog id="import-dialog" class="t-dialog" aria-labelledby="dlg-title" aria-describedby="dlg-summary">
+    <div class="t-dialog-body">
+      <h2 id="dlg-title"></h2>
+      <p id="dlg-summary"></p>
+      <div class="t-field" id="dlg-sheet-wrap" hidden>
+        <label for="dlg-sheet">가져올 시트</label>
+        <select id="dlg-sheet"></select>
+      </div>
+      <div id="dlg-errors" class="t-error-box" hidden>
+        <p id="dlg-errors-title"></p>
+        <ul id="dlg-errors-list"></ul>
+      </div>
+      <div id="dlg-neis" class="t-neis" hidden>
+        <dl class="t-neis-facts" id="dlg-neis-facts"></dl>
+        <p class="t-help" id="dlg-neis-excluded"></p>
+        <div id="dlg-neis-review" class="t-error-box" hidden>
+          <p id="dlg-neis-review-title"></p>
+          <ul id="dlg-neis-review-list"></ul>
+        </div>
+      </div>
+      <div id="dlg-preview-wrap" class="t-preview-wrap" hidden>
+        <table class="t-preview">
+          <caption class="sr-only">가져올 기자재 미리보기</caption>
+          <thead><tr><th scope="col">#</th><th scope="col">이름</th><th scope="col">수량</th><th scope="col">규격</th><th scope="col">비고</th><th scope="col">분류</th><th scope="col" id="dlg-status-col" hidden>상태</th></tr></thead>
+          <tbody id="dlg-preview"></tbody>
+        </table>
+      </div>
+      <button type="button" class="btn btn-secondary" id="dlg-show-all" hidden>전체 보기</button>
+      <fieldset id="dlg-neis-options" class="t-mode" hidden>
+        <legend>가져올 행 고르기</legend>
+        <label class="t-check"><input type="checkbox" id="dlg-include-zero"> <span id="dlg-include-zero-label">보유량이 0인 기자재도 목록에 넣기</span></label>
+        <label class="t-check" id="dlg-include-review-wrap"><input type="checkbox" id="dlg-include-review"> <span id="dlg-include-review-label">확인이 필요한 행도 넣기 (수량은 비워 두고 직접 확인)</span></label>
+      </fieldset>
+      <fieldset id="dlg-mode" class="t-mode" hidden>
+        <legend>기존 목록과 어떻게 합칠까요?</legend>
+        <label class="t-radio"><input type="radio" name="import-mode" value="append" checked> <span id="dlg-append-label">추가: 기존 목록 뒤에 붙입니다</span></label>
+        <label class="t-radio"><input type="radio" name="import-mode" value="replace"> <span id="dlg-replace-label">바꾸기: 기존 목록을 지우고 이 목록으로 바꿉니다</span></label>
+        <div id="dlg-dup-wrap" hidden>
+          <p class="t-help" id="dlg-dup-info"></p>
+          <details class="t-details"><summary>겹치는 기자재 보기</summary><ul id="dlg-dup-list"></ul></details>
+          <label class="t-radio"><input type="radio" name="dup-mode" value="skip" checked> 이름·규격이 같은 기자재는 건너뛰기 (수량을 더하지 않음)</label>
+          <label class="t-radio"><input type="radio" name="dup-mode" value="keep"> 그래도 따로 추가하기</label>
+        </div>
+        <label class="t-check" id="dlg-replace-confirm-wrap" hidden><input type="checkbox" id="dlg-replace-confirm"> <span id="dlg-replace-confirm-label">기존 기자재 목록을 지우고 바꾸는 것을 확인합니다</span></label>
+      </fieldset>
+      <label class="t-check" id="dlg-other-wrap" hidden><input type="checkbox" id="dlg-other" checked> 예산, 탐구 시간, 안전 메모도 이 파일 내용으로 바꾸기</label>
+      <p id="dlg-merge-error" class="t-inline-error" role="alert" hidden></p>
+    </div>
+    <div class="t-dialog-actions">
+      <button type="button" class="btn btn-secondary" id="dlg-cancel">취소</button>
+      <button type="button" class="btn btn-primary" id="dlg-confirm">가져오기</button>
+    </div>
+  </dialog>
+  <dialog id="gh-dialog" class="t-dialog" aria-labelledby="gh-title">
+    <div class="t-dialog-body">
+      <h2 id="gh-title">GitHub에 저장</h2>
+
+      <div id="gh-step-target">
+        <p class="t-help">저장할 저장소를 확인하고 토큰을 입력하세요. 먼저 읽기만 해서 확인하며, 다음 화면에서 내용을 확인한 뒤에야 저장돼요.</p>
+        <div class="t-gh-grid">
+          <div class="t-field"><label for="gh-owner">저장소 소유자</label><input type="text" id="gh-owner" autocomplete="off" spellcheck="false"></div>
+          <div class="t-field"><label for="gh-repo">저장소 이름</label><input type="text" id="gh-repo" autocomplete="off" spellcheck="false"></div>
+          <div class="t-field"><label for="gh-branch">브랜치</label><input type="text" id="gh-branch" autocomplete="off" spellcheck="false"></div>
+          <div class="t-field"><label for="gh-path">파일 경로</label><input type="text" id="gh-path" autocomplete="off" spellcheck="false"></div>
+        </div>
+        <div class="t-field">
+          <label for="gh-token">GitHub 토큰 (fine-grained)</label>
+          <input type="password" id="gh-token" autocomplete="off" spellcheck="false" data-lpignore="true" data-1p-ignore>
+          <p class="t-help">토큰은 저장 작업 동안에만 쓰고 바로 지워요. 브라우저나 파일에 저장하지 않으며, GitHub(api.github.com)에만 보내요.</p>
+        </div>
+        <details class="t-details">
+          <summary>토큰 만드는 방법</summary>
+          <ol class="t-steps">
+            <li>GitHub의 Settings → Developer settings → Personal access tokens → Fine-grained tokens에서 새 토큰을 만듭니다.</li>
+            <li>Repository access는 Only select repositories를 골라 이 사이트의 저장소 하나만 선택합니다.</li>
+            <li>Permissions의 Contents만 Read and write로 바꿉니다.</li>
+            <li>만료 기간을 짧게 정하고, 토큰은 다른 사람과 공유하지 마세요. 공용 컴퓨터에서는 쓰지 마세요.</li>
+          </ol>
+        </details>
+      </div>
+
+      <div id="gh-step-preview" hidden>
+        <dl class="t-neis-facts" id="gh-facts"></dl>
+        <p class="t-help" id="gh-removed"></p>
+        <p id="gh-same" class="t-inline-error" hidden></p>
+        <details class="t-details"><summary>학생 설정 파일 내용 전체 보기</summary><pre class="t-gh-json" id="gh-json" tabindex="0"></pre></details>
+        <label class="t-check"><input type="checkbox" id="gh-confirm"> <span id="gh-confirm-label"></span></label>
+      </div>
+
+      <div id="gh-step-result" hidden>
+        <p id="gh-result"></p>
+        <p class="t-help"><a id="gh-commit" href="#" target="_blank" rel="noopener noreferrer">GitHub에서 저장 내용 보기</a></p>
+        <p class="t-help" id="gh-deploy"></p>
+        <button type="button" class="btn btn-secondary" id="gh-check">배포 반영 확인</button>
+      </div>
+
+      <p id="gh-error" class="t-inline-error" role="alert" hidden></p>
+      <p id="gh-busy" class="t-help" role="status"></p>
+    </div>
+    <div class="t-dialog-actions">
+      <button type="button" class="btn btn-secondary" id="gh-cancel">취소</button>
+      <button type="button" class="btn btn-primary" id="gh-next">저장소 확인</button>
+    </div>
+  </dialog>
+</body>
+</html>

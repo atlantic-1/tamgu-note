@@ -1,0 +1,1369 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-05T00:58:34.203Z",
+  "equipment": [
+    {
+      "name": "소화기",
+      "qty": 12,
+      "spec": "ABC분말(3.3 kg)",
+      "note": "구분 필수 · 소요기준 1 실험(실)당 2 · NEIS 기준량 6(보유량 아님) · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "소화용 모래",
+      "qty": 3,
+      "spec": "3 kg이상",
+      "note": "구분 필수 · 소요기준 1 실험(실)당 1 · NEIS 기준량 3(보유량 아님) · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "방염담요",
+      "qty": 3,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 실험(실)당 1 · NEIS 기준량 3(보유량 아님) · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "보안경",
+      "qty": 78,
+      "spec": "안경식 또는 고글식(권장)",
+      "note": "구분 필수 · 소요기준 1 학생(명)당 1 · NEIS 기준량 29(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "실험복",
+      "qty": 90,
+      "spec": "학생용, 순면",
+      "note": "구분 필수 · 소요기준 1 학생(명)당 1 · NEIS 기준량 29(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "내화학 실험복",
+      "qty": 1,
+      "spec": "교사용",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "내열 장갑",
+      "qty": 15,
+      "spec": "내열 및 초저온용",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "내화학 장갑",
+      "qty": 15,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "마스크1",
+      "qty": 100,
+      "spec": "일반 또는 방진용",
+      "note": "구분 필수 · 소요기준 1 학생(명)당 1 · NEIS 기준량 29(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "구급약품함",
+      "qty": 3,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 실험(실)당 1 · NEIS 기준량 3(보유량 아님) · 과목 과학(2025)",
+      "category": "안전장구",
+      "source": "neis"
+    },
+    {
+      "name": "TV or 비디오 프로젝터(영사용스크린 포함)",
+      "qty": 3,
+      "spec": "60인치 이상 or 4000ANSI이상(전동형, 가로 180cm이상)",
+      "note": "구분 필수 · 소요기준 1 실험(실)당 1 · NEIS 기준량 3(보유량 아님) · 과목 과학(2025)",
+      "category": "공통(기자재)",
+      "source": "neis"
+    },
+    {
+      "name": "DNA 모형세트",
+      "qty": 100,
+      "spec": "분해조립식",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 수량 단위: NEIS에 적힌 세트(조) 수 그대로 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "간이 분광기",
+      "qty": 30,
+      "spec": "슬릿간격 조절, 눈금 표시",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "깔때기",
+      "qty": 1,
+      "spec": "약 ø60 mm, 유리(플라스틱)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "깔때기대",
+      "qty": 12,
+      "spec": "2구용, 목제 또는 플라스틱제",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "냉장고",
+      "qty": 1,
+      "spec": "600 L 이상",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "눈금실린더",
+      "qty": 20,
+      "spec": "각종(10~500 mL)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "막자와 막자사발",
+      "qty": 18,
+      "spec": "ø100 mm 이상, 막자포함",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "부피플라스크",
+      "qty": 20,
+      "spec": "각종(10∼1,000 mL)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "비커",
+      "qty": 40,
+      "spec": "각종(50∼1,000 mL)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "삼각플라스크",
+      "qty": 30,
+      "spec": "각종(50∼500 mL)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "선스펙트럼 광원장치",
+      "qty": 1,
+      "spec": "H, He, Ne, Ar 램프(4종)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "수조(사각)",
+      "qty": 8,
+      "spec": "250×150×150 mm 이상",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "시험관",
+      "qty": 20,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "시험관 집게",
+      "qty": 10,
+      "spec": "철제 또는 목제",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "시험관대",
+      "qty": 10,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "실리콘마개",
+      "qty": 1,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "약숟가락",
+      "qty": 20,
+      "spec": "스테인레스강제",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "유리막대",
+      "qty": 15,
+      "spec": "ø5 mm, 길이 약 300 mm",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "전기포트",
+      "qty": 1,
+      "spec": "AC 220 V, 2 L 정도",
+      "note": "구분 필수 · 소요기준 1 실험(실)당 1 · NEIS 기준량 3(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "전열기(또는 핫플레이트)",
+      "qty": 8,
+      "spec": "AC, 500∼1000 W",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "철제 스탠드 세트",
+      "qty": 15,
+      "spec": "높이 600 ㎜ 이상",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 수량 단위: NEIS에 적힌 세트(조) 수 그대로 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "페트리접시",
+      "qty": 10,
+      "spec": "ø100∼150 mm, 유리 또는 PVC",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "핀셋",
+      "qty": 10,
+      "spec": "스테인레스강제",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-일반교구",
+      "source": "neis"
+    },
+    {
+      "name": "pH 검사지",
+      "qty": 5,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-측정교구",
+      "source": "neis"
+    },
+    {
+      "name": "간이 전기 전도계",
+      "qty": 8,
+      "spec": "9 V 건전지 / 1.4 V 건전지",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-측정교구",
+      "source": "neis"
+    },
+    {
+      "name": "눈금피펫",
+      "qty": 10,
+      "spec": "각종(5~25 mL)",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "공통-측정교구",
+      "source": "neis"
+    },
+    {
+      "name": "디지털 온도계",
+      "qty": 15,
+      "spec": "접촉식, 온도 범위 약 -40~200 ℃",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-측정교구",
+      "source": "neis"
+    },
+    {
+      "name": "전자저울",
+      "qty": 8,
+      "spec": "칭량 100∼500 g, 감량 0.1 g",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-측정교구",
+      "source": "neis"
+    },
+    {
+      "name": "피펫 필러",
+      "qty": 20,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "공통-측정교구",
+      "source": "neis"
+    },
+    {
+      "name": "간이 스위치",
+      "qty": 8,
+      "spec": "DC 용",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "광학대(렌즈포함)",
+      "qty": 1,
+      "spec": "길이 약 1 m, 눈금표시, 오목·볼록거울, 오목·볼록렌즈, 스크린, 전구, 양초꽂이포함",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "광학용 물통",
+      "qty": 8,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "네오디뮴자석",
+      "qty": 10,
+      "spec": "ø20 mm이상",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "발광 다이오드",
+      "qty": 1,
+      "spec": "5 mm",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "비누막용 원형틀",
+      "qty": 8,
+      "spec": "ø10 cm 이상",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "빛의 회절간섭실험세트",
+      "qty": 2,
+      "spec": "레이저, 슬릿 포함",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 수량 단위: NEIS에 적힌 세트(조) 수 그대로 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "솔레노이드",
+      "qty": 8,
+      "spec": "140×120×25 mm",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "수레용 추",
+      "qty": 30,
+      "spec": "0.5 kg",
+      "note": "구분 필수 · 소요기준 1 학생(명)당 1 · NEIS 기준량 29(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "스펙트럼관",
+      "qty": 1,
+      "spec": "5종 1조(네온, 헬륨, 수소, 질소, 아르곤)",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 수량 단위: NEIS에 적힌 세트(조) 수 그대로 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "역학용 수레",
+      "qty": 34,
+      "spec": "예)추-질량 1 ㎏, 500 g, 각 2개, 용수철부 포함",
+      "note": "구분 필수 · 소요기준 2 학생(명)당 1 · NEIS 기준량 15(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "이중 슬릿",
+      "qty": 2,
+      "spec": "슬릿 간격 2종류 이상 (0.25~0.50 mm)",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "이중코일",
+      "qty": 8,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "전기회로시험기(테스터기, 멀티미터)",
+      "qty": 1,
+      "spec": "디지털, 0~1000 V, 0~10 A, 0~2 ㏁",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "전지끼우개",
+      "qty": 20,
+      "spec": "1.5 V 건전지용, 4개1조",
+      "note": "구분 필수 · 소요기준 2 학생(명)당 1 · NEIS 기준량 15(보유량 아님) · 사용학년 전학년 · 수량 단위: NEIS에 적힌 세트(조) 수 그대로 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "파동실험용 용수철",
+      "qty": 8,
+      "spec": "ø75×150 mm, ø20×1500 mm 2종 1조",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 수량 단위: NEIS에 적힌 세트(조) 수 그대로 · 과목 과학(2025)",
+      "category": "물리학",
+      "source": "neis"
+    },
+    {
+      "name": "뷰렛",
+      "qty": 8,
+      "spec": "유리 또는 테프론,10~50 mL",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "화학",
+      "source": "neis"
+    },
+    {
+      "name": "뷰렛집게",
+      "qty": 10,
+      "spec": "홀더 포함",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "화학",
+      "source": "neis"
+    },
+    {
+      "name": "광학 현미경",
+      "qty": 9,
+      "spec": "접안10~15x, 대물4~100x, 광원장치포함",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "생명과학",
+      "source": "neis"
+    },
+    {
+      "name": "덮개유리(커버글라스)",
+      "qty": 5,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "생명과학",
+      "source": "neis"
+    },
+    {
+      "name": "받침유리(슬라이드글라스)",
+      "qty": 10,
+      "spec": "",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "생명과학",
+      "source": "neis"
+    },
+    {
+      "name": "채혈기",
+      "qty": 8,
+      "spec": "채혈침 포함",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "생명과학",
+      "source": "neis"
+    },
+    {
+      "name": "암석 박편",
+      "qty": 1,
+      "spec": "화성암, 퇴적암, 변성암 각 3개 이상",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 1 · NEIS 기준량 1(보유량 아님) · 과목 과학(2025)",
+      "category": "지구과학",
+      "source": "neis"
+    },
+    {
+      "name": "전향력 실험장치",
+      "qty": 9,
+      "spec": "회전 원판, 전동식",
+      "note": "구분 필수 · 소요기준 4 학생(명)당 1 · NEIS 기준량 8(보유량 아님) · 사용학년 전학년 · 과목 과학(2025)",
+      "category": "지구과학",
+      "source": "neis"
+    },
+    {
+      "name": "지구본",
+      "qty": 5,
+      "spec": "ø300 mm 이상",
+      "note": "구분 필수 · 소요기준 1 학교(원)당 2 · NEIS 기준량 2(보유량 아님) · 과목 과학(2025)",
+      "category": "지구과학",
+      "source": "neis"
+    },
+    {
+      "name": "(도서) 세상은 온통 화학이야기",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 화학에서 인생을 배우다",
+      "qty": 8,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 노벨상이 만든 세상 화학1",
+      "qty": 14,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 노벨상이 만든 세상 화학2",
+      "qty": 12,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) why? 시리즈",
+      "qty": 30,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 미래 과학 설명서3",
+      "qty": 16,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 미래 과학 설명서2",
+      "qty": 16,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 탄소문명",
+      "qty": 9,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 사라진 스푼",
+      "qty": 10,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 죽이는 화학",
+      "qty": 9,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 재밌어서 밤새읽는 화학이야기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 걱정 많은 어른들을 위한 화학 이야기",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 요리의 과학",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 새로운 종의 진화 로보 사피엔스",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 꽃의 제국",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 달팽이",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 곤충의 사생활 엿보기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 한국의 야생동물을 찾아서",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 대나무",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 지구생태이야기 생명지대",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 환경에서 만나는 새와 물고기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 춤추는 물고기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 101가지 예상 주제로 보는 중,고등학교 과학토론 완전정복",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 미래 과학 설명서 1",
+      "qty": 17,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 웬만한건 다 키워먹는 베란다 채소밭",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 풀하우스",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 들풀에서 줍는 과학",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 생명을 노래하는 개구리",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 병원 장사",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 마지막 기회",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 조정래 장편소설 풀꽃도 꽃이다1",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 조정래 장편소설 풀꽃도 꽃이다2",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 인생의 마지막 순간에서",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 아이의 마음을 읽는 영화 수업",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 니체가 눈물을 흘릴때",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 상상하는 수업 구글클래스룸",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 교실의 미래 구글 클래스룸",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 교육과정-수업-평가 어떻게 혁신할 것인가",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 석주명 평전",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 마음 일기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 데이팅 게임",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 클래스 CLASS",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 스티븐 호킹의 우주",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 경기지역 지질탐구 학습백과",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 퀴즈! 과학상식 화산,지진",
+      "qty": 10,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 기후 위기, 과학이 말하다",
+      "qty": 7,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 요리조리 알아보는 화산과 지진",
+      "qty": 4,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 반드시 다가올 미래",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 지진과 화산 좀 아는 10대",
+      "qty": 12,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 오늘부터 시작하는 탄소중립",
+      "qty": 8,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 지구온난화 어떻게 해결할까?",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 지구이야기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 카페 안드로메다",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 떨림과 울림",
+      "qty": 24,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 로켓이야기",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 인터넷 다음은 로봇이다",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 물리, 가볍게 뛰어넘기",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 철학을 위한 물리학",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) E=mc2",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 우주의 발견",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 학생의 물리 오개념",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 조선왕조실록",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 프로젝트 수업, 교육과정을 만나다",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 과학의 역사와 미래",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 한국 현대사",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 자연, 예술, 과학의 수학적 원형",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 4대문학상 수상작가 대표작 1997",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 함께 읽기는 힘이 세다",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 한국현대사 산책 1940년대편 2권",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 서중석의 현대사 이야기 1",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 12가지 인생의 법칙",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 친일파의 한국 현대사",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 아침부터 저녁까지 어디서나 마주치는 하루 과학",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 하면된다",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "(도서) 스무살 돈",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "싸인펜",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "색연필",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "양면테이프",
+      "qty": 3,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "청테이프",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "유성매직 24색",
+      "qty": 12,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "가위",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "테이프",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "소독 티슈",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "클루",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "부루마블",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "블록스",
+      "qty": 7,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "학용품 세트",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "탄소중립 보드게임",
+      "qty": 8,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "인생게임",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "스플렌더",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "루미큐브",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "찹찹",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "전자력 실험기",
+      "qty": 4,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "단진자 실험장치",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "단진자 실험장치",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "광학실험용 광원(레이저)",
+      "qty": 1,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "오목거울",
+      "qty": 6,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "돋보기",
+      "qty": 7,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "졸보기",
+      "qty": 8,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "지구의",
+      "qty": 3,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "지구의",
+      "qty": 2,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "윗접시저울",
+      "qty": 9,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "추 세트",
+      "qty": 10,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    },
+    {
+      "name": "변성암 표본",
+      "qty": 5,
+      "spec": "",
+      "note": "",
+      "category": "",
+      "source": "extra"
+    }
+  ],
+  "budget": {
+    "amountKRW": null,
+    "note": ""
+  },
+  "time": {
+    "sessions": null,
+    "minutesPerSession": null,
+    "weeks": null,
+    "note": ""
+  },
+  "safetyNote": ""
+}
